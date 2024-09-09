@@ -1,12 +1,8 @@
-<div class="container mx-auto m-3">
-    <app-header />
+<div>
+    <h1 class="text-lg font-bold">About</h1>
+    <p class="text-xs"> ipsum dolor, sit amet consectetur adipisicing elit. Doloribus omnis deleniti corrupti magnam sapiente voluptate maiores, consectetur nam! Ex aperiam amet veritatis itaque quia perspiciatis maxime facilis voluptatibus modi nisi!</p>
+    <p class="text-xs"><app-counter [duration]="duration()" [message]="message()"  *ngIf="duration() > 0" /></p>
     <div>
-        <h1 class="text-lg font-bold">About</h1>
-        <p class="text-xs"> ipsum dolor, sit amet consectetur adipisicing elit. Doloribus omnis deleniti corrupti magnam sapiente voluptate maiores, consectetur nam! Ex aperiam amet veritatis itaque quia perspiciatis maxime facilis voluptatibus modi nisi!</p>
-        <p class="text-xs"><app-counter [duration]="duration()" [message]="message()"  *ngIf="duration() > 0" /></p>
-        <div>
-            <app-wave-audio audioUrl="./assets/audios/audio.mp3" />
-        </div>
+        <app-wave-audio audioUrl="./assets/audios/audio.mp3" />
     </div>
 </div>
-
